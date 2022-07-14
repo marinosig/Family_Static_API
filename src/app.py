@@ -70,7 +70,7 @@ def delete_a_member(member_id):
     response = jackson_family.delete_member(member_id)
 
     if response:
-        return jsonify({ "Done": response}), 200
+        return jsonify({ "done": response}), 200
 
     return jsonify({ "Not_Found": True}), 404
 
